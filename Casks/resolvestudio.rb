@@ -9,4 +9,10 @@ cask 'resolvestudio' do
   #app "Visual Studio Code.app", target: "Visual Studio Code Intel.app"
   pkg "Install Resolve #{version}.pkg"
   
+  postflight do
+  	# create symlink using ln -s
+  	system_command '/bin/rm', args: ['-rf','/Applications/DaVinci Resolve 18']
+  	system_command '/bin/mv', args: ['/Applications/DaVinci Resolve', '/Applications/DaVinci Resolve 18 Studio']
+  end
+  
 end
