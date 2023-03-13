@@ -12,7 +12,7 @@ cask "resolvestudio" do
   
   postflight do
   	# create symlink using ln -s
-  	system_command "/bin/rm", args: ["-rf","/Applications/DaVinci Resolve #{major_version} Studio"]
+  	system_command "/usr/bin/sudo", args: ['/bin/rm','-rf',"/Applications/DaVinci Resolve #{major_version} Studio"]
   	system_command "/bin/mv", args: ["/Applications/DaVinci Resolve", "/Applications/DaVinci Resolve #{major_version} Studio"]
   end
   
