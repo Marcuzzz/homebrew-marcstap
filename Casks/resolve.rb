@@ -3,7 +3,8 @@ cask "resolve" do
   major_version = version.split(".").first
   sha256 :no_check
 
-  url "file://#{Dir.home}/pCloud%20Drive/00%20Marc/40%20Apps/mac/DaVinci_Resolve_#{version}_Mac.zip"
+  #url "file://#{Dir.home}/pCloud%20Drive/00%20Marc/40%20Apps/mac/DaVinci_Resolve_#{version}_Mac.zip"
+  url "https://www.blackmagicdesign.com/ca/support/download/3d7a9703a5614d16834816641a447f7f/Mac%20OS%20X"
   name "resolve"
   homepage "https://www.blackmagicdesign.com/products/davinciresolve"
   
