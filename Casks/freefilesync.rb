@@ -1,5 +1,5 @@
 cask 'freefilesync' do
-  version '12.1'
+  version '12.2'
   sha256 :no_check
 
   url "https://freefilesync.org/download/FreeFileSync_#{version}_macOS.zip"
