@@ -2,7 +2,7 @@ cask 's3-sftp-user' do
   version '1'
   sha256 :no_check
 
-  url "https://monk-software.s3.eu-central-1.amazonaws.com/mediamonks/s3-sftp-user.zip"
+  url "https://monksoftware.s3.eu-central-1.amazonaws.com/mediamonks/s3-sftp-user.zip"
   name 's3-sftp-user'
   homepage ''
 
