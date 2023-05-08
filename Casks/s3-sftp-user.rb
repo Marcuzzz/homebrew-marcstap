@@ -8,13 +8,6 @@ cask 's3-sftp-user' do
 
   auto_updates true
   
-#   postflight do
-#   	artifact 'ZXPSignCmd-64bit', target: '/tmp/ZXPSignCmd-64bit'
-#   end
-  
-#  binary 'ZXPSignCmd-64bit', target: '/usr/local/bin/ZXPSignCmd'
-  #/usr/local/Caskroom
-  
   postflight do
   	system_command '/bin/mkdir', args: ["#{Dir.home}/MediaMonks"] unless Dir.exist?("#{Dir.home}/MediaMonks")
   	system_command '/bin/rm', args: ['-rf',"#{Dir.home}/MediaMonks/s3-sftp-user"] unless !Dir.exist?("#{Dir.home}/MediaMonks/s3-sftp-user")
