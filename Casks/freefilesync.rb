@@ -1,10 +1,10 @@
 cask 'freefilesync' do
-  version '12.2'
+  version '12.3'
   sha256 :no_check
 
-  url "https://freefilesync.org/download/FreeFileSync_#{version}_macOS.zip"
+  url "https://github.com/hkneptune/FreeFileSync/releases/download/v#{version}/FreeFileSync_#{version}_macOS.zip"
   name 'freefilesync'
-  homepage 'https://freefilesync.org/download.php'
+  homepage 'https://github.com/hkneptune/FreeFileSync/releases'
 
   auto_updates true
 
